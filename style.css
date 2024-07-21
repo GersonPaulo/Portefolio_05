@@ -66,18 +66,18 @@ a:hover {
     cursor: default;
 }
 
-/* HAMBURGUER-MENU */
+/* hamburger-MENU */
 
-#hamburguer-nav {
+#hamburger-nav {
     display: none;
 }
 
-.hamburguer-menu {
+.hamburger-menu {
     position: relative;
     display: inline-block;
 }
 
-.hamburguer-icon {
+.hamburger-icon {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -86,8 +86,7 @@ a:hover {
     cursor: pointer;
 }
 
-
-.hamburguer-icon span {
+.hamburger-icon span {
     width: 100%;
     height: 2px;
     background-color: black;
@@ -103,6 +102,48 @@ a:hover {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+ 
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;      
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
 }
 
 
